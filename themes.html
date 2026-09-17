@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Themes — NMTSESH-2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<style>
+ 
+  .theme-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+
+  .tag-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    background: var(--bg-surface, #ffffff);
+    color: var(--text-color, #1e293b);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 9999px;
+    padding: 0.45rem 0.9rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  }
+
+  .tag-btn:hover {
+    color: #ffffff;
+    background: var(--primary-color, #0056b3);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 86, 179, 0.4), 
+                0 0 25px rgba(0, 86, 179, 0.2);
+  }
+
+  .tag-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.5);
+  }
+
+  .tag-btn:focus-visible {
+    outline: 2px solid var(--primary-color, #0056b3);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/images/NIT_Puducherry_Official_logo.png" alt="NMTSESH-2027 logo" class="brand-logo">
+      <span class="brand-text">
+        <span class="brand-mark">NMTSESH-2027</span>
+        <span class="brand-sub">NIT Puducherry, Karaikal</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="call-for-papers.html">Call for Papers</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="themes.html" aria-current="page">Themes</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<div class="ticker" role="region" aria-label="Announcements">
+  <div class="ticker-track">
+    <a href="call-for-papers.html" class="ticker-item">📢 Call for Abstracts is now open — submit by 31 October 2026</a>
+    <a href="registration.html" class="ticker-item">📝 Registration is now open — early bird closes 10 October 2026</a>
+    <a href="call-for-papers.html" class="ticker-item">📢 Call for Abstracts is now open — submit by 31 October 2026</a>
+    <a href="registration.html" class="ticker-item">📝 Registration is now open — early bird closes 10 October 2026</a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="crumb">Themes</p>
+    <h1>Conference themes</h1>
+    <p class="lede">Eight tracks spanning materials discovery, energy storage and conversion, healthcare applications, sustainability, and computational methods. Submissions are welcome under any of the following.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <ol class="theme-index" style="list-style:none; padding:0;">
+
+    
+      <li class="theme-row">
+        <span class="theme-num">01</span>
+        <div>
+          <h3 class="theme-title">Next‑Generation Materials</h3>
+          <div class="theme-tags">
+            <button type="button" class="tag-btn">Advanced functional materials</button>
+            <button type="button" class="tag-btn">Nanomaterials &amp; nanocomposites</button>
+            <button type="button" class="tag-btn">2D &amp; emerging materials</button>
+            <button type="button" class="tag-btn">Polymers, composites &amp; hybrids</button>
+            <button type="button" class="tag-btn">Biomaterials &amp; bio‑derived materials</button>
+            <button type="button" class="tag-btn">Porous &amp; carbon‑based materials</button>
+            <button type="button" class="tag-btn">Smart &amp; multifunctional materials</button>
+            <button type="button" class="tag-btn">Sustainable &amp; recyclable materials</button>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="theme-row">
+        <span class="theme-num">02</span>
+        <div>
+          <h3 class="theme-title">Sustainable Energy Storage</h3>
+          <div class="theme-tags">
+            <button type="button" class="tag-btn">Lithium‑ion &amp; sodium‑ion batteries</button>
+            <button type="button" class="tag-btn">Beyond‑lithium‑ion batteries</button>
+            <button type="button" class="tag-btn">Solid‑state batteries</button>
+            <button type="button" class="tag-btn">Metal‑air &amp; redox‑flow batteries</button>
+            <button type="button" class="tag-btn">Supercapacitors &amp; hybrid systems</button>
+            <button type="button" class="tag-btn">Advanced electrode &amp; electrolyte materials</button>
+            <button type="button" class="tag-btn">Battery recycling &amp; second‑life tech</button>
+            <button type="button" class="tag-btn">Grid‑scale &amp; renewable storage</button>
+            <button type="button" class="tag-btn">Emerging energy‑storage technologies</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="theme-row">
+        <span class="theme-num">03</span>
+        <div>
+          <h3 class="theme-title">Energy Conversion &amp; Emerging Energy Technologies</h3>
+          <div class="theme-tags">
+            <button type="button" class="tag-btn">Hydrogen production, storage &amp; utilization</button>
+            <button type="button" class="tag-btn">Fuel cells</button>
+            <button type="button" class="tag-btn">Solar‑energy materials</button>
+            <button type="button" class="tag-btn">Photocatalysis &amp; electrocatalysis</button>
+            <button type="button" class="tag-btn">CO₂ conversion &amp; utilization</button>
+            <button type="button" class="tag-btn">Electrochemical energy conversion</button>
+            <button type="button" class="tag-btn">Renewable‑energy integration</button>
+          </div>
+        </div>
+      </li>
+
+   
+      <li class="theme-row healthcare">
+        <span class="theme-num">04</span>
+        <div>
+          <h3 class="theme-title">Materials for Healthcare &amp; Biomedical Applications</h3>
+          <div class="theme-tags">
+            <button type="button" class="tag-btn">Biomaterials &amp; bio‑compatible materials</button>
+            <button type="button" class="tag-btn">Drug‑delivery systems</button>
+            <button type="button" class="tag-btn">Nanomedicine &amp; therapeutic nanomaterials</button>
+            <button type="button" class="tag-btn">Tissue engineering &amp; regenerative materials</button>
+            <button type="button" class="tag-btn">Biomedical implants &amp; coatings</button>
+            <button type="button" class="tag-btn">Biosensors &amp; diagnostic materials</button>
+            <button type="button" class="tag-btn">Antimicrobial &amp; wound‑healing materials</button>
+            <button type="button" class="tag-btn">Medical devices &amp; smart healthcare materials</button>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="theme-row">
+        <span class="theme-num">05</span>
+        <div>
+          <h3 class="theme-title">Green &amp; Sustainable Materials</h3>
+          <div class="theme-tags">
+            <button type="button" class="tag-btn">Green synthesis &amp; processing</button>
+            <button type="button" class="tag-btn">Biomass‑ &amp; waste‑derived materials</button>
+            <button type="button" class="tag-btn">Waste valorization</button>
+            <button type="button" class="tag-btn">Circular economy approaches</button>
+            <button type="button" class="tag-btn">Sustainable manufacturing</button>
+            <button type="button" class="tag-btn">Biodegradable &amp; recyclable materials</button>
+            <button type="button" class="tag-btn">Life‑cycle assessment &amp; sustainability</button>
+          </div>
+        </div>
+      </li>
+
+ 
+      <li class="theme-row">
+        <span class="theme-num">06</span>
+        <div>
+          <h3 class="theme-title">Computational &amp; Digital Technologies</h3>
+          <div class="theme-tags">
+            <button type="button" class="tag-btn">Computational materials science</button>
+            <button type="button" class="tag-btn">Density Functional Theory (DFT)</button>
+            <button type="button" class="tag-btn">Molecular modelling &amp; simulation</button>
+            <button type="button" class="tag-btn">AI &amp; machine learning for materials discovery</button>
+            <button type="button" class="tag-btn">Materials informatics</button>
+            <button type="button" class="tag-btn">Data‑driven materials design</button>
+            <button type="button" class="tag-btn">Digital approaches for energy &amp; healthcare tech</button>
+          </div>
+        </div>
+      </li>
+
+   
+      <li class="theme-row">
+        <span class="theme-num">07</span>
+        <div>
+          <h3 class="theme-title">Advanced Characterization &amp; Materials Engineering</h3>
+          <div class="theme-tags">
+            <button type="button" class="tag-btn">X‑ray diffraction &amp; spectroscopy</button>
+            <button type="button" class="tag-btn">Electron microscopy &amp; surface analysis</button>
+            <button type="button" class="tag-btn">Thermal &amp; mechanical characterization</button>
+            <button type="button" class="tag-btn">Electrochemical characterization</button>
+            <button type="button" class="tag-btn">Structure–property relationships</button>
+            <button type="button" class="tag-btn">Surface modification &amp; functionalization</button>
+            <button type="button" class="tag-btn">Materials processing &amp; scale‑up</button>
+          </div>
+        </div>
+      </li>
+
+     
+      <li class="theme-row healthcare">
+        <span class="theme-num">08</span>
+        <div>
+          <h3 class="theme-title">Emerging Technologies &amp; Applications</h3>
+          <div class="theme-tags">
+            <button type="button" class="tag-btn">Smart sensors &amp; wearable technologies</button>
+            <button type="button" class="tag-btn">Flexible &amp; printed electronics</button>
+            <button type="button" class="tag-btn">IoT‑enabled healthcare &amp; energy systems</button>
+            <button type="button" class="tag-btn">Smart materials &amp; devices</button>
+            <button type="button" class="tag-btn">Technology‑assisted healthcare</button>
+            <button type="button" class="tag-btn">Industry–academia collaboration</button>
+            <button type="button" class="tag-btn">Technology transfer &amp; commercialization</button>
+          </div>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container cta-banner-inner">
+    <div>
+      <h2>Questions about a submission?</h2>
+      <p style="color:var(--navy); opacity:0.85; margin:0;">Reach the organising committee directly.</p>
+    </div>
+    <a href="contact.html" class="btn btn-outline">Contact us</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>NMTSESH‑2027</h4>
+        <p style="color:#9CA9BB; max-width:32ch;">Two‑Day International Conference on Next‑Generation Materials and Technologies for Sustainable Energy Storage and Healthcare. 7–8 January 2027, NIT Puducherry, Karaikal.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="about.html">About the conference</a></li>
+          <li><a href="speakers.html">Speakers</a></li>
+          <li><a href="call-for-papers.html">Call for papers</a></li>
+          <li><a href="themes.html">Themes &amp; call for papers</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="committee.html">Organising committee</a></li>
+          <li><a href="contact.html">Contact &amp; venue</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Organised by</h4>
+        <ul>
+          <li>Department of Chemistry</li>
+          <li>Department of EEE</li>
+          <li>NIT Puducherry, Karaikal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2027 NMTSESH, NIT Puducherry, Karaikal.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
