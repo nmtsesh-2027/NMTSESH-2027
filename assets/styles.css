@@ -223,6 +223,8 @@ a:focus-visible, button:focus-visible{
   }
 }
 
+.hero-line{ display: block; }
+
 .hero{
   position: relative;
   background: var(--navy);
@@ -284,7 +286,29 @@ a:focus-visible, button:focus-visible{
   margin-top: 2rem;
 }
 
-/* NEW: countdown timer in hero */
+.nav-end-logo{
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+@media (max-width: 480px){
+  .nav-end-logo{ display: none; }
+}
+
+.people-home{ grid-template-columns: repeat(4, 1fr); }
+.people-home .person:nth-child(1),
+.people-home .person:nth-child(2){ grid-column: span 2; }
+@media (max-width: 700px){
+  .people-home{ grid-template-columns: 1fr; }
+  .people-home .person:nth-child(1),
+  .people-home .person:nth-child(2){ grid-column: span 1; }
+}
+
+.sponsor-table th, .sponsor-table td{ text-align: center; }
+.sponsor-table th:first-child, .sponsor-table td:first-child{ text-align: left; }
+
+
 .countdown{
   display: flex;
   flex-wrap: wrap;
