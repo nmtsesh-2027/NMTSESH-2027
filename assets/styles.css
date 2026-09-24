@@ -223,7 +223,18 @@ a:focus-visible, button:focus-visible{
   }
 }
 
-.hero-line{ display: block; }
+.hero-line{
+  display: block;
+  white-space: nowrap; /* FIX: forces each phrase onto exactly one line */
+}
+@media (max-width: 700px){
+  .hero-line{ white-space: normal; } /* let it wrap naturally on small phones only */
+}
+
+.hero h1{
+  color: var(--white);
+  font-size: clamp(1.65rem, 3.4vw, 2.75rem); /* FIX: dedicated smaller size so phrases fit */
+}
 
 .hero{
   position: relative;
@@ -257,9 +268,10 @@ a:focus-visible, button:focus-visible{
   z-index: 2;
   padding-top: clamp(3.5rem, 9vw, 7.5rem);
   padding-bottom: clamp(3rem, 6vw, 5rem);
-  max-width: 720px;
+  max-width: 860px;
 }
-/* NEW: logo shown in the hero, before the conference name */
+
+
 .hero-logo{
   width: 96px;
   height: 96px;
