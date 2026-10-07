@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// NEW: countdown timer to the conference start (7 Jan 2027, IST)
 document.addEventListener('DOMContentLoaded', function () {
   var el = {
     days: document.getElementById('cd-days'),
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     secs: document.getElementById('cd-secs')
   };
   if (!el.days) return;
-  var target = new Date('2027-01-07T00:00:00+05:30').getTime();
+  var target = new Date('2027-01-06T00:00:00+05:30').getTime();
 
   function pad(n){ return String(n).padStart(2, '0'); }
 
