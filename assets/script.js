@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!el.days) return;
   var target = new Date('2027-01-06T00:00:00+05:30').getTime();
 
-  function pad(n){ return String(n).padStart(2, '0'); }
+  function pad(n){ return String(n).padStart(2, '0'); } 
 
   function tick(){
     var diff = target - Date.now();
