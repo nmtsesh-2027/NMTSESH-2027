@@ -11,6 +11,52 @@
 </head>
 <body>
 
+  <style>
+    .theme-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+
+  .tag-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    background: var(--bg-surface, #ffffff);
+    color: var(--text-color, #1e293b);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 9999px;
+    padding: 0.45rem 0.9rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  }
+
+  .tag-btn:hover {
+    color: #ffffff;
+    background: var(--primary-color, #0056b3);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 86, 179, 0.4), 
+                0 0 25px rgba(0, 86, 179, 0.2);
+  }
+
+  .tag-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.5);
+  }
+
+  .tag-btn:focus-visible {
+    outline: 2px solid var(--primary-color, #0056b3);
+    outline-offset: 2px;
+  }
+</style>
+
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="brand">
